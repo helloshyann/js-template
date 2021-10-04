@@ -1,0 +1,91 @@
+/* COLOR SCHEME
+Pink Primary - #f95779
+Pink Secondary - #ffb4c4
+Yellow Primary - #f9c910
+Yellow Secondary - #fdedaf
+Green Primary - #44d7b6
+Green Secondary - #adeedf
+Purple Primary - #6c6fe5
+Purple Secondary - #bfc1fe
+Peach Primary - #f67b50
+Peach Secondary - #ffbba3
+Sky Primary - #7fdee3
+Sky Secondary - #cff9fb
+White - #f9f9ff 
+Black - #333333
+Shadow - #454360 */
+
+:root {
+    --primary-color: #f95779;
+    --secondary-color: #ffb4c4;
+    --dark-color: #333;
+    --white-color: #f9f9ff;
+}
+
+main>.container {
+    padding: 60px 15px 0;
+}
+
+#content {
+    min-height: 90vh;
+}
+
+.sticky-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+footer .social>a {
+    color: var(--white-color);
+}
+
+footer .social>a:hover {
+    opacity: .9;
+    color: var(--secondary-color);
+}
+
+.techicon {
+    color: var(--secondary-color) ;
+}
+.techicon:hover {
+    color: var(--primary-color);
+}
+
+.checklist>li i {
+    color: var(--secondary-color);
+}
+
+h1 {
+    color: var(--secondary-color);
+    text-shadow: 2px, 2px, #333;
+}
+
+.btn {
+    color: var(--white-color);
+    background-color:var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn:hover {
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+}
