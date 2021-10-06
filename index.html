@@ -26,7 +26,8 @@
 
 <body class="d-flex flex-column h-100">
 
-    <!-- Navigation -->
+    
+        <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">
@@ -59,44 +60,66 @@
         </div>
     </nav>
 
-    <!-- Main -->
-    <main id="content" class="flex-shrink-0">
-       <div class="container mt-3">
-           <div class="row row-cols-1 row-cols-md-2 g-3">
-                <div class="col order-last order-md-first">
-                    <h1 class="fw-bold">APP NAME: A Coding Challenge</h1>
-                    <hr>
-                    <h5 class="lead">Project description goes here</h5>
-                    <ul>
-                        <ul class="fa-ul checklist">
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS and Bootstrap 5 Layout</li>
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript Fundamentals</li>
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript Loops</li>
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavScript DOM Manipulation</li>
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript Boolean Logic</li>
+    <!-- Header-->
+    <header class="bg-header py-5">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center">
+                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                    <div class="my-5 text-center text-xl-start">
+                        <h1 class="display-5 fw-bolder text-white mb-2">APP NAME: A Coding Challenge</h1>
+                        <hr>
+                        <h5 class="lead">Project description goes here.</h5>
+                        <ul>
+                            <ul class="fa-ul checklist">
+                                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS and Bootstrap 5 Layout</li>
+                                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript Fundamentals</li>
+                                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript Loops</li>
+                                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavScript DOM Manipulation</li>
+                                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript Boolean Logic</li>
+                            </ul>
                         </ul>
-                    </ul>
-                    <div class="d-flex justify-content-center">
-                        <a type="button" href="/app.html" class="btn btn-outline-dark">Try It Out</a>
-                    </div>
-                    <hr>
-                    <h5 class="fw-bold mt-3 ">Technologies Used</h5>
-                    <div class="d-flex justify-content-center">
-                        <div class="row">                            
-                            <div class="col"><i class="techicon fab fa-js-square fa-5x"></i></div>
-                            <div class="col"><i class="techicon fab fa-html5 fa-5x"></i></div>
-                            <div class="col"><i class="techicon fab fa-css3-alt fa-5x"></i></div>
-                            <div class="col"><i class="techicon fab fa-bootstrap fa-5x"></i></div>
+                        <div class="d-flex justify-content-center">
+                            <a type="button" href="/app.html" class="btn btn-outline-dark">Try It Out</a>
                         </div>
                     </div>
-                    
                 </div>
-                <div class="col d-flex align-items-center justfy-content-center">
-                    <img src="img/APPNAMELogo.svg" class="img-fluid" width="500">
+                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features section-->
+    <section class="py-5" id="features">
+        <div class="container px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">TECHNOLOGIES USED</h2></div>
+                <div class="col-lg-8">
+                    <div class="row gx-5 row-cols-1 row-cols-md-2">
+                        <div class="col mb-5 h-100">
+                            <div class="feature mb-3"><i class="techicon fab fa-js-square fa-5x"></i></div>
+                            <h2 class="h5">JavaScript</h2>
+                            <p class="mb-0">One of the core technologies of web development, JavaScript is a programming language that runs right in your browser.</p>
+                        </div>
+                        <div class="col mb-5 h-100">
+                            <div class="feature mb-3"><i class="techicon fab fa-bootstrap fa-5x"></i></div>
+                            <h2 class="h5">Bootstrap 5</h2>
+                            <p class="mb-0">Bootstrap 5 is an open-source CSS framework directed at responsive, mobile-first web development.</p>
+                        </div>
+                        <div class="col mb-5 mb-md-0 h-100">
+                            <div class="feature mb-3"><i class="techicon fab fa-html5 fa-5x"></i></div>
+                            <h2 class="h5">HTML 5</h2>
+                            <p class="mb-0">HyperText Markup Language creates structured documents so information can easily be displayed within your web broswer.</p>
+                        </div>
+                        <div class="col h-100">
+                            <div class="feature mb-3"><i class="techicon fab fa-css3-alt fa-5x"></i></div>
+                            <h2 class="h5">CSS 3</h2>
+                            <p class="mb-0">Cascading Style Sheets design and enable the presentation of content, such as layout, colors, and fonts.</p>
+                        </div>
+                    </div>
                 </div>
-           </div>
-       </div>
-    </main>
+            </div>
+        </div>
+    </section>
 
     <!--Footer Section -->
     <footer class="footer mt-auto py-3">
@@ -120,9 +143,6 @@
                         </div>
                         <div class="col social">
                             <a href="#"><i class="fab fa fa-linkedin-square fa-2x"></i></a>
-                        </div>
-                        <div class="col social">
-                            <a href="#"><i class="fab fa fa-reddit-square fa-2x"></i></a>
                         </div>
 
                     </div>
