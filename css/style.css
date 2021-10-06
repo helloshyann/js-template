@@ -97,10 +97,10 @@ footer .social>a:hover {
 }
 
 .techicon {
-    color: var(--secondary-color) ;
+    color: var(--primary-color) ;
 }
 .techicon:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .checklist>li i {
